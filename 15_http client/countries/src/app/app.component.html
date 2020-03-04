@@ -1,0 +1,12 @@
+<h1>Countries</h1>
+
+<button (click)="getCountries()">Get Countries</button>
+
+<ul>
+  <li *ngFor="let c of countryArray">
+    {{c.name}}, {{c.population}}
+  </li>
+</ul>
+
+
+<app-footer></app-footer>

@@ -1,0 +1,23 @@
+
+<h1>you ordered:</h1>
+<h2>
+  {{chipsCount}} chips |
+  {{rareCount}} Rare |
+  {{wellDoneCount}} WellDone |
+  {{mediumCount}} Medium |
+  {{mediumWellCount}} MediumWell
+</h2>
+
+<hr/>
+<button (click)="addBurger('Fish')">
+  ADD New Fish-Burger
+</button>
+<button (click)="addBurger('Chicken')">
+  ADD New Chicken-Burger
+</button>
+
+<div *ngFor="let x of burgerArray">
+  <app-burger [burgerType]="x" 
+  (doneLevelAdd)="updateDoneLevel($event)"
+  (chipsAdd)="addChips()"></app-burger>
+</div>

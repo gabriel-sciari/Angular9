@@ -1,0 +1,35 @@
+<h1>Hello {{fname}}!!!</h1>
+
+
+<h3>First way</h3>
+<div>
+    <label>Name:</label>
+    <input (keyup)="saveName($event.target.value)" [value]="fname" />
+</div>
+
+
+<h3>Second way</h3>
+<div>
+    <label>Name:</label>
+    <input #test (keyup)="saveName(test.value)" [value]="fname" />
+</div>
+
+
+<h3>Third way</h3>
+<div>
+    <label>Name:</label>
+    <input [(ngModel)]="fname" />
+</div>
+
+<h1>Select matrix size</h1>
+<button *ngFor="let n of arr" (click)="updateMat(n)">{{n}}</button>
+
+<div *ngIf="matrix">
+  <table border="1">
+        <tr *ngFor="let row of matrix">
+            <td *ngFor="let col of row" [class]="col">
+                {{col}}
+            </td>
+        </tr>
+  </table>
+</div>

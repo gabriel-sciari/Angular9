@@ -1,0 +1,9 @@
+h1{
+    display: inline-block;
+}
+
+img{
+    display: inline-block;
+    float:right;
+    height: 100px;
+}

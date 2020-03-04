@@ -1,0 +1,17 @@
+
+<div>
+   {{myBurgerType}} Burger
+</div>
+
+
+<table border="1">
+  <tr *ngFor="let key of additionKeys">
+    <td class="clickable" (click)="handleAdditinSubmit(key)">{{key}}</td>
+    <td>
+        <span *ngIf="key==='doneLevel'">{{doneLevel[additions[key]]}}</span>
+        <span *ngIf="key!=='doneLevel'">{{additions[key]}}</span>
+  
+      </td>
+  </tr>
+</table>
+
