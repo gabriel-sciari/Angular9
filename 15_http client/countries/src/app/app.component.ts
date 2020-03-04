@@ -10,8 +10,10 @@ import { Country } from './shared/models/country.model';
 export class AppComponent {
  
   public countryArray:Country[];
-
+  public  urlArray:string[];
+  
   constructor(private countryService:CountryService){
+    this.urlArray=this.countryService.urlArray;
     this.countryArray=this.countryService.countryArray;
   }
 
