@@ -1,29 +1,6 @@
+
 {
-    "confirmed": 126431,
-    "suspected": 0,
-    "cured": 68566,
-    "dead": 4706,
-    "updated_at": "2020-03-12 14:41:40"
-}
-{
-    "China": {
-        "confirmed": 80793,
-        "suspected": 0,
-        "cured": 62813,
-        "dead": 3169
-    },
-    "Hong Kong": {
-        "confirmed": 129,
-        "suspected": 0,
-        "cured": 67,
-        "dead": 3
-    },
-    "Taiwan": {
-        "confirmed": 49,
-        "suspected": 0,
-        "cured": 20,
-        "dead": 1
-    },
+,
     "Macao": {
         "confirmed": 10,
         "suspected": 0,

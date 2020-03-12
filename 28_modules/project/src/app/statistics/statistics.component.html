@@ -1,0 +1,7 @@
+<p *ngFor="let key of obj.keys(total)">
+  {{key}} : {{total[key]}}
+</p>
+
+<app-single-statistic *ngFor="let c of countryArr" [info]="c">
+
+</app-single-statistic>
