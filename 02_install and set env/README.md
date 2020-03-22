@@ -19,7 +19,7 @@ node --version
 ```
 * update npm version:
 ```
-npm install -g npm 
+sudo npm install -g npm 
 ```
 * check npm version:
 ```
