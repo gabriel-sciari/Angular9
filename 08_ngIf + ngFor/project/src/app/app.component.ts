@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  public dailyBest:string;
+  public readonly options:string[]=['BNS','BWS','Esspreso','WWS',"Tea"];
+
+  public changeBest(choice:string):void{
+    this.dailyBest=choice;
+  }
 }

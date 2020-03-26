@@ -1,3 +1,17 @@
-<h1>Test</h1>
+<p *ngIf="dailyBest">Daily Best Offer: {{dailyBest}}</p>
 
-<app-coffee></app-coffee>
+
+
+<div>
+    <h3>Change our Daily Best Offer:</h3>
+    <!--
+        Can't have multiple template bindings on one element. 
+        Use only one attribute prefixed with *
+    -->
+    <div *ngFor="let p of options">
+        <button (click)="changeBest(p)" *ngIf="p!='BWS'">
+            {{p}}
+        </button>
+    </div>
+ 
+</div>

@@ -1,7 +1,20 @@
 
-<h1>
-{{msg}}
-</h1>
+<h1>msg: {{msg}}</h1>
+<p>fullStaticName: {{fullname}}</p>
 
-<app-animals></app-animals>
+
+
+<h2>First way to access enum values</h2>
+<button (click)="setFirstColor(0)">Choose color {{enumHolder[0]}}</button>
+<button (click)="setFirstColor(1)">Choose color {{enumHolder[1]}}</button>
+<button (click)="setFirstColor(2)">Choose color {{enumHolder[2]}}</button>
+<p>selectedColor : {{enumHolder[firstSelectedColor]}}</p>
+
+
+
+<h2>Second way to access enum values</h2>
+<button (click)="setSecondColor(0)">Choose color {{getColorName(0)}}</button>
+<button (click)="setSecondColor(1)">Choose color {{getColorName(1)}}</button>
+<button (click)="setSecondColor(2)">Choose color {{getColorName(2)}}</button>
+<p>selectedColor : {{getColorName(secondSelectedColor)}}</p>
 

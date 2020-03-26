@@ -9,22 +9,34 @@ import { Color } from './shared/models/color.model';
 export class AppComponent {
 
   public msg:string="Hello";
+
+  /*----------------- Way to access static member from html-------------- */
   public static fullStaticName = "A.Karp";
-  enumHolder: typeof Color = Color;
-  selectedColor: Color = 0;
-
-  setColor(newColor:number){
-    this.selectedColor=newColor;
+  public get fullname() {
+    return AppComponent.fullStaticName;
   }
 
-  get colorName():string{
-    return Color[this.selectedColor];
-  }
-  get colorList() {
-    return Object.keys(Color).filter(x => isNaN(Number(x)))
+
+  /*-----------------First way to access enum from html------------------ */
+  public enumHolder: typeof Color = Color;
+
+  public firstSelectedColor: Color = 0;
+
+  public setFirstColor(newColor:number){
+    this.firstSelectedColor=newColor;
   }
 
-  get fullname() {
-      return AppComponent.fullStaticName;
+
+  /*-----------------Second way to access enum from html----------------- */
+  public secondSelectedColor:Color=0;
+
+  public setSecondColor(newColor:number){
+    this.secondSelectedColor=newColor;
   }
+
+  public getColorName(color:number):string{
+    return Color[color];
+  }
+
+
 }
