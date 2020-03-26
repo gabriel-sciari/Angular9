@@ -3,7 +3,7 @@
 * Install visual studio code (as text editor)
 
 
-## Install ng (with linux) 
+## Install ng 
 * install angular
 ```
 npm i -g @angular/cli
