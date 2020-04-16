@@ -1,0 +1,25 @@
+<h1>Two way binding</h1>
+
+
+<div>
+    <h3>First way : {{firstName}} </h3>
+    <label>firstName:</label>
+    <input (keyup)="saveFirstName($event.target.value)" [value]="firstName" />
+</div>
+
+
+<hr/>
+
+<div>
+    <h3>Second way : {{secondName}} </h3>
+    <label>secondName:</label>
+    <input #test (keyup)="saveSecondName(test.value)" [value]="secondName" />
+</div>
+
+<hr/>
+
+<div>
+    <h3>Third way : {{thirdName}} </h3>
+    <label>thirdName:</label>
+    <input [(ngModel)]="thirdName"/>
+</div>

@@ -1,0 +1,36 @@
+<h2>Select</h2>
+
+<h3>selectedFruit: {{selectedFruit}}</h3>
+<select #fruit_option
+    [(ngModel)]="selectedFruit" 
+    (change)="setFruitByEvent($event.target.value); setFruitById(fruit_option.value)">
+
+    <option *ngFor="let f of fruits">{{f}}</option>
+
+</select>
+
+<hr/>
+
+<h2>Radio Button</h2>
+<h3>selectedSnacks: {{selectedSnack}}</h3>
+
+<div *ngFor="let s of snacks">
+    <input type="radio" [value]="s" [(ngModel)]="selectedSnack" (change)="setSnackByEvent(s)"/> 
+    <label>{{s}}</label>
+</div>
+
+<hr/>
+
+
+<h2>Checkbox</h2>
+
+<h3>selectedDrinks:</h3>
+<div *ngFor="let d of drinks">
+    <span *ngIf="d.isChecked">{{d.name}}</span>
+</div>
+
+<div  *ngFor="let d of drinks">
+    <input type="checkbox" [value]="d.name" [(ngModel)]="d.isChecked" 
+    (change)="setDrinkByEvent()"/> 
+    <label>{{d.name}}</label>
+</div>

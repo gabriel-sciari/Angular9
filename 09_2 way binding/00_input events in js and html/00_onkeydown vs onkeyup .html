@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function showInfo(info){
+            console.log(info);
+        }
+    </script>
+</head>
+<body>
+    <!--
+        onkeydown - A key is pressed down.
+        onkeyup - A key is released.
+        NOTE: onkeydown is executed before onkeyup
+    -->
+    <input onkeydown="showInfo(`onkeydown`)" onkeyup="showInfo(`onkeyup`)"/>
+</body>
+</html>
