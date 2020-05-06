@@ -1,25 +1,9 @@
-<p>Child changes counter: {{counter}}</p>
-<app-info (ageChange)="incCounter()"></app-info>
+<h1>Welcom to Ariel family</h1>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<h2>Children:</h2>
+<app-child 
+    *ngFor="let child of children" 
+    [info]="child"
+    (birthdayEvent)="sayHappyBirthday($event)"
+>
+</app-child>

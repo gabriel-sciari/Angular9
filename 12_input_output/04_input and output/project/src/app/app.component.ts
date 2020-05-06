@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Person } from './shared/person.model';
 
 @Component({
   selector: 'app-root',
@@ -6,14 +7,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public counter:number=0;
+    public children:Person[]=[
+      {
+        "name":"Bob",
+        "age":13
+      },
+      {
+        "name":"Alice",
+        "age":10
+      },
+      {
+        "name":"Tom",
+        "age":5
+      }
+    ];
 
-  public incCounter():void{
-    this.counter++;
-  }
+    public sayHappyBirthday(name:string){
+      alert(`Happy birtday to ${name}`);
+    }
 }
-
-
-
-
-
