@@ -8,6 +8,7 @@ import { Person } from '../shared/person.model';
 })
 export class ChildComponent {
    @Input() public info:Person;
+   
    @Output() public birthdayEvent:EventEmitter<string>=new EventEmitter<string>();
    
    public incAge(){

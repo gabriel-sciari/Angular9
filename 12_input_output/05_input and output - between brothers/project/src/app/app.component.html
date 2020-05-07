@@ -1,10 +1,3 @@
-<ul>
-  <li>{{nameChild1}}</li>
-  <li>{{nameChild2}}</li>
-</ul>
+<app-edit (editEvent)="saveChanges($event)"></app-edit>
 
-<hr/>
-
-<app-child1 [sisterAge]="ageChild2" [myName]="nameChild1" (ageEmitter)="blessBD1($event)"></app-child1>
-
-<app-child2 [brotherAge]="ageChild1" [myName]="nameChild2" (ageEmitter)="blessBD2($event)"></app-child2>
+<app-view [name]="userName"></app-view>

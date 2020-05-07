@@ -1,0 +1,5 @@
+<div>
+    <p>Enter your name:</p>
+    <input type="text" #user/>
+    <button (click)="saveName(user.value); user.value=''">save</button>
+</div>

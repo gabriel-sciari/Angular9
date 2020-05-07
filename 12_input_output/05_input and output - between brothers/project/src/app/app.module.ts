@@ -2,14 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { Child1Component } from './child1/child1.component';
-import { Child2Component } from './child2/child2.component';
+import { EditComponent } from './edit/edit.component';
+import { ViewComponent } from './view/view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Child1Component,
-    Child2Component
+    EditComponent,
+    ViewComponent
   ],
   imports: [
     BrowserModule
