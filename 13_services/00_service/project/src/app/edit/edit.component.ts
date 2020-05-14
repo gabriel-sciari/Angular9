@@ -15,4 +15,7 @@ export class EditComponent{
   constructor(private personService:PersonService) { 
     this.editPerson=this.personService.person;
   }
+
+
+  
 }

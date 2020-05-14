@@ -8,21 +8,25 @@ import { DoneLevel } from '../sharad/models/done-level.model';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
+
   chipsCount: number = 0;
   rareCount: number = 0;
   wellDoneCount: number = 0;
   mediumCount: number = 0;
   mediumWellCount: number = 0;
 
-  addChips() {
-    this.chipsCount++;
-  }
   burgerArray: string[] = [];
+
 
   addBurger(param: string) {
     this.burgerArray.push(param);
     this.rareCount++;
   }
+
+  addChips() {
+    this.chipsCount++;
+  }
+  
 
   updateDoneLevel(doneLevelInfo:AdditionChange){
     this.setDoneCounter(doneLevelInfo.prevAddition,false);

@@ -5,8 +5,16 @@ import { Person } from '../models/person.model';
   providedIn: 'root'
 })
 export class PersonService {
+
   public person:Person={
     "name":"Bob",
     "age":12
   };
+  
 }
+
+
+
+
+
+

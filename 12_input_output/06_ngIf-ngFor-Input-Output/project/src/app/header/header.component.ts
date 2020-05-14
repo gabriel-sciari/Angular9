@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-shopName:string="Burger Shop"
+  shopName:string="Burger Shop"
   imgSrc:string="assets/images/logo.jpg"
   constructor() { }
 

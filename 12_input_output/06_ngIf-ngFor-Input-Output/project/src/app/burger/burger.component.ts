@@ -14,13 +14,11 @@ export class BurgerComponent implements OnInit {
 
 
   @Output("chipsAdd") addChips: 
-  EventEmitter<void> = 
-  new EventEmitter<void>();
+  EventEmitter<void> = new EventEmitter<void>();
   
   
   @Output("doneLevelAdd") addDoneLevel: 
-  EventEmitter<AdditionChange> = 
-  new EventEmitter<AdditionChange>();
+  EventEmitter<AdditionChange> = new EventEmitter<AdditionChange>();
   
   static counter: number = 1;
   burgerCounter: number;
