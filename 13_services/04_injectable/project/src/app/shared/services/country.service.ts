@@ -1,11 +1,10 @@
 import { WeatherService } from './weather.service';
 import { Injectable } from '@angular/core';
 
-
-
 @Injectable()
 export class CountryService{
 
+    // DI
     public constructor(private weatherService:WeatherService){}
 
     public get country(){

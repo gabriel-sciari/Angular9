@@ -9,7 +9,8 @@ import { WeatherService } from './shared/services/weather.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public constructor(public countryService:CountryService, public weatherService:WeatherService){
+  public constructor(public countryService:CountryService, 
+    public weatherService:WeatherService){
 
   }
 }
