@@ -1,0 +1,30 @@
+<div *ngIf="myPostService.postGetResponse">
+    <h1>Given post</h1>
+    <p> userId: {{myPostService.postGetResponse.userId}} </p>
+    <p> id: {{myPostService.postGetResponse.id}} </p>
+    <p> title: {{myPostService.postGetResponse.title}} </p>
+    <p> body: {{myPostService.postGetResponse.body}} </p>
+</div>
+
+<hr>
+<div>
+    <label>body:</label>
+    <input type="text" [(ngModel)]="post.body">
+</div>
+
+<div>
+    <label>title:</label>
+    <input type="text" [(ngModel)]="post.title">
+</div>
+
+<div>
+    <label>userId:</label>
+    <input type="number" [(ngModel)]="post.userId">
+</div>
+
+<button (click)="sendPost()">add new post</button>
+
+
+<div *ngIf="myPostService.postResponse">
+    returned id: {{myPostService.postResponse.id}}  
+</div>
