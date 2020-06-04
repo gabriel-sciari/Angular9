@@ -1,0 +1,6 @@
+<div *ngFor="let p of packagesInfo">
+    <h3>{{p.packageAmount?.package}}</h3>
+    <p>{{p.packageAmount?.downloads}} downloads 
+        from {{p.packageAmount?.start}} to {{p.packageAmount?.end}} </p>
+    <p>description: {{p.packageDetails?.package?.description}}</p>
+</div>
