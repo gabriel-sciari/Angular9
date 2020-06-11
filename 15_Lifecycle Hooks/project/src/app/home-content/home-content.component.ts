@@ -8,7 +8,7 @@ import { Component, OnChanges,OnInit, DoCheck, AfterContentInit, AfterContentChe
 export class HomeContentComponent implements 
 OnChanges, OnInit, DoCheck, AfterContentInit, 
 AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
-  @Input("msg") msg:string="";
+  @Input() msg:string="";
 
   constructor() {
     console.log("constructor ",this.msg);

@@ -1,11 +1,10 @@
-<div id="page">
-    <header>
-        <app-header></app-header>
-    </header>
-    <main>
-        <app-home></app-home>
-    </main>
-    <footer>
-        <app-footer></app-footer>
-    </footer>
-</div>
+<button (click)="changeMsg()">
+    change msg in child
+</button>
+
+
+<button (click)="toggleChild()">
+    toggle Child
+</button>
+
+<app-homeContent *ngIf="showChild" [msg]="parentMsg"></app-homeContent>

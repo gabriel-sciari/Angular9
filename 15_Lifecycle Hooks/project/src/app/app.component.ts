@@ -5,4 +5,16 @@ import { Component } from '@angular/core';
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css']
 })
-export class AppComponent { }
+export class AppComponent { 
+    parentMsg = "test0";
+    counter = 1;
+    showChild = true;
+    
+    changeMsg() {
+        this.parentMsg = `test${this.counter++}`;
+    }
+
+    toggleChild() {
+        this.showChild = !this.showChild;
+    }
+}
